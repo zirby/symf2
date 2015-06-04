@@ -26,6 +26,15 @@ body {
         border-left: 1px solid #e7e7e7;
     }
 }
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
 
 .navbar-top-links li {
     display: inline-block;

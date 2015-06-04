@@ -8,6 +8,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller
 {
     /**
+     * @Route("/", name="homepage")
+     */
+    public function homeAction()
+    {
+        return $this->render('index.html.twig');
+    }
+    /**
      * @Route("/pgi", name="pgi_homepage")
      */
     public function indexAction()
@@ -63,7 +70,7 @@ class DefaultController extends Controller
         return $this->render('pgi/buttons.html.twig');
     }
 
-       /**
+    /**
      * @Route("/pgi/notifications", name="pgi_notifications")
      */
     public function notificationsAction()
@@ -71,5 +78,35 @@ class DefaultController extends Controller
         return $this->render('pgi/notifications.html.twig');
     }
 
-    
+    /**
+     * @Route("/pgi/typography", name="pgi_typography")
+     */
+    public function typographyAction()
+    {
+        return $this->render('pgi/typography.html.twig');
+    }
+
+    /**
+     * @Route("/pgi/grid", name="pgi_grid")
+     */
+    public function gridAction()
+    {
+        return $this->render('pgi/grid.html.twig');
+    }
+
+    /**
+     * @Route("/pgi/blanck", name="pgi_blanck")
+     */
+    public function blanckAction()
+    {
+        return $this->render('pgi/blanck.html.twig');
+    }
+    /**
+     * @Route("/pgi/login", name="pgi_login")
+     */
+    public function loginAction()
+    {
+        return $this->render('pgi/login.html.twig');
+    }
+   
 }
