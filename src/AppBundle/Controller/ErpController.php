@@ -14,5 +14,18 @@ class ErpController extends Controller
     {
         return $this->render('erp/index.html.twig');
     }
+    /**
+     * @Route("/erp/companies", name="erp_companies")
+     */
+    public function listAction()
+    {
+        $em = $this->getDoctrine()->getEntityManager();
+        
+        $companies = $em->getRepository("AppBundle:Company")->findAll();
+        
+        return $this->render('erp/list_company.html.twig', array(
+            'companies' => $companies,
+        ));
+    }
 
 }
