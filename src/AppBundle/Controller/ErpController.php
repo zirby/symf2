@@ -27,5 +27,13 @@ class ErpController extends Controller
             'companies' => $companies,
         ));
     }
+    /**
+     * @Route("/erp/company/add", name="erp_add_company")
+     */
+    public function AddAction()
+    {
+        
+        return $this->render('erp/add_company.html.twig');
+    }
 
 }
