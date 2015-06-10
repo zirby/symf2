@@ -35,5 +35,13 @@ class ErpController extends Controller
         
         return $this->render('erp/add_company.html.twig');
     }
+    /**
+     * @Route("/erp/login", name="erp_login")
+     */
+    public function LoginAction()
+    {
+        
+        return $this->render('erp/login.html.twig');
+    }
 
 }
