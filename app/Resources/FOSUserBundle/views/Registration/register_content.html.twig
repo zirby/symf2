@@ -24,7 +24,7 @@
                         </div>
                         <div class="panel-body">                       
                             <form action="{{ path('fos_user_registration_register') }}" {{ form_enctype(form) }} method="POST" class="fos_user_registration_register">
-                                {{ form_widget(form) }}
+                                {{ form(form) }}
                                 <input type="submit" class="btn btn-default" id="_submit" name="_submit" value="{{ 'registration.submit'|trans }}" />
                             </form> 
                         </div>
